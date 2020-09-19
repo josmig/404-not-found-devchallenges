@@ -1,5 +1,44 @@
-.container{
-    width: 95%;
-    margin: 0 auto;
-    background-color: aqua;
+*,::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header,.main{
+    width: 90%;  
+    margin: 40px auto;  
+    border: 1px solid black;
+    
+}
+
+.header__content_title{
+    font-family: 'Inconsolata', monospace;
+    font-size:1.3em;        
+    letter-spacing: -0.08em;
+    font-weight: 700;
+}
+
+.main__content{
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-around;
+}
+.content__img img{
+    width: 500px;
+    height: 450px;
+    border:1px solid green;
+}
+.content__text{
+    width: 500px;
+    border: 1px solid red;
+}
+.content__text-title{
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 70px;    
+    line-height: 85px;    
+    letter-spacing: -0.035em;
+    color:#333333;
+
 }
