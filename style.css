@@ -1,3 +1,7 @@
+:root{
+    --font1:'Inconsolata', monospace;
+    --font2:'Space Mono', monospace;
+}
 *,::before,
 ::after{
     margin: 0;
@@ -7,14 +11,13 @@
 
 .header,.main{
     width: 90%;  
-    margin: 40px auto;  
-    border: 1px solid black;
+    margin: 40px auto;      
     
 }
 
 .header__content_title{
-    font-family: 'Inconsolata', monospace;
-    font-size:1.3em;        
+    font-family: var(--font1);
+    font-size:24px;        
     letter-spacing: -0.08em;
     font-weight: 700;
 }
@@ -22,23 +25,57 @@
 .main__content{
     display: flex;
     margin-top: 12px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.content__img img{
+.main__img img{
     width: 500px;
-    height: 450px;
-    border:1px solid green;
+    height: 450px;    
 }
-.content__text{
-    width: 500px;
-    border: 1px solid red;
+.main__text{
+    width: 670px; 
 }
-.content__text-title{
-    font-family: Space Mono;
-    font-weight: bold;
-    font-size: 70px;    
-    line-height: 85px;    
+.main__text-title{
+    font-family: var(--font2);
+    font-weight: 700;
+    font-size: 64px;    
+    line-height: 80px;    
     letter-spacing: -0.035em;
     color:#333333;
+}
+.main__text-parrafo{
+    width: 400px;
+    height: 100px;    
+    font-family: var(--font2);
+    font-weight: 400;
+    line-height: 35.54px;
+    color:#4F4F4F;
+    font-size: 24px;
+    letter-spacing: -3.5%;
+    margin-top: 36px;
+    
+}
+.main__boton{
+    background-color: #333333;
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 55px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: var(--font2);
+    padding: 15px 30px;
 
+}
+.footer-contain {
+    display: flex;
+    justify-content: center;
+}
+.footer-contain p{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 293px;
+    padding: 30px 0px;
+    line-height: 17.07px;
+    
 }
