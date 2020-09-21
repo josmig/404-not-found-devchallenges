@@ -25,14 +25,14 @@
 .main__content{
     display: flex;
     margin-top: 12px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .main__img img{
     width: 500px;
     height: 450px;    
 }
 .main__text{
-    width: 670px; 
+    width: 500px; 
 }
 .main__text-title{
     font-family: var(--font2);
